@@ -1,8 +1,21 @@
-# CodeCraftHub
+<div align="center">
 
+# 🛠️ CodeCraftHub
 
-## Overview
+A centralized repository and developer sandbox dedicated to software engineering projects, utility scripts, algorithms, and continuous learning.
 
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Bash](https://img.shields.io/badge/Shell_Script-CLI-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](#)
+[![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)](#)
+
+</div>
+
+---
+
+## 📌 Repository Overview
+
+Welcome to **CodeCraftHub**! This repository serves as my personal development sandbox and master portfolio for software engineering experiments. It is designed to store, organize, and document various coding projects ranging from algorithmic problem-solving and automation scripts to full-stack application modules.
 **CodeCraftHub** is a personalized learning platform for developers, built using  
 **Node.js**, **MongoDB**, **Docker**, and **Generative AI**.
 
@@ -12,9 +25,26 @@ that can be extended with AI-driven recommendations and learning analytics.
 
 This repository focuses on the **User Management Service**, a core backend
 microservice responsible for user registration, authentication, authorization,
-and secure data handling.
+and secure data handling
+
+The primary goal of this hub is to demonstrate clean code architecture, version control best practices, and a commitment to continuous technical improvement.
 
 ---
+
+## 🏗️ Hub Architecture
+
+To maintain a clean and scalable codebase, projects within this hub are compartmentalized into specific domains:
+
+```text
+CodeCraftHub/
+├── 📂 automation-scripts/      # Bash and Python scripts for workflow automation
+├── 📂 algorithms/              # Data structures and algorithmic problem-solving
+├── 📂 web-development/         # Front-end and back-end application modules
+├── 📂 data-processing/         # Scripts for data parsing, cleaning, and analysis
+└── README.md                   # Master hub documentation
+```
+
+
 
 ## Key Features
 
@@ -27,21 +57,6 @@ and secure data handling.
 - Environment-based configuration using `.env`
 - Fully containerized deployment with **Docker & Docker Compose**
 
----
-
-## Technology Stack
-
-- **Node.js** – Backend runtime
-- **Express.js** – REST API framework
-- **MongoDB** – NoSQL database
-- **Mongoose** – MongoDB ODM
-- **JWT (jsonwebtoken)** – Authentication tokens
-- **bcrypt** – Password hashing
-- **Winston** – Application logging
-- **Jest & Supertest** – Automated testing
-- **Docker & Docker Compose** – Containerized deployment
-
----
 
 ## Final Project Structure
 
@@ -82,12 +97,46 @@ Future Enhancements
 
 ⸻
 
-License
+```
 
-This project is licensed under the MIT License.
+🛠️ Core Tech Stack
+Category	Technologies Used	Purpose
+Programming Languages	Python, Bash / Shell	Core logic, scripting, and application development
+Version Control	Git, GitHub	Source code management and feature branching
+Documentation	Markdown	Creating structured, readable project documentation
+Execution Environment	Linux / CLI	Running command-line tools and testing scripts
 
-⸻
+⚙️ How to Use This Repository
+If you would like to explore or test any of the scripts and projects contained in this hub, follow these standard steps:
+1. Clone the Hub
+Download a copy of the repository to your local machine:
+```text
+git clone [https://github.com/HAMED-PAYANDA/CodeCraftHub.git](https://github.com/HAMED-PAYANDA/CodeCraftHub.git)
+cd CodeCraftHub
+```
+3. Navigate to a Specific Module
+Move into the directory of the project you want to explore:
+```text
+# Example: Navigating to the python automation scripts
+cd automation-scripts
+```
 
-Author
+3. Execute the Code
+Run the desired script using the appropriate runtime environment:
+```text
+# For Python scripts:
+python3 script_name.py
 
-Developed as part of an IBM Skills Network / Generative AI Final Project.
+# For Bash scripts (ensure execution permissions are set):
+chmod +x script_name.sh
+./script_name.sh
+```
+
+🚀 Future Roadmap
+•	[ ] Integrate Continuous Integration (CI) workflows using GitHub Actions.
+•	[ ] Expand the algorithms section with test-driven development (TDD) principles.
+•	[ ] Containerize core utility applications using Docker.
+👤 Author
+Hamed Payanda
+•	GitHub: @HAMED-PAYANDA
+Crafting efficient, scalable, and clean code—one script at a time.
