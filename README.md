@@ -135,8 +135,11 @@ chmod +x script_name.sh
 ```
 
 🚀 Future Roadmap
+
 •	[ ] Integrate Continuous Integration (CI) workflows using GitHub Actions.
+
 •	[ ] Expand the algorithms section with test-driven development (TDD) principles.
+
 •	[ ] Containerize core utility applications using Docker.
 
 👤 Author
