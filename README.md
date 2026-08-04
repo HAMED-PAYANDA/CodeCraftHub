@@ -100,16 +100,12 @@ Future Enhancements
 ```
 
 🛠️ Core Tech Stack
-Category						Technologies Used						Purpose
-
-Programming Languages			Python, Bash / Shell					Core logic, scripting, and application development
-
-Version Control					Git, GitHub								Source code management and feature branching
-
-Documentation					Markdown								Creating structured, readable project documentation
-
-Execution Environment			Linux / CLI								Running command-line tools and testing scripts
-
+| Category | Technologies Used | Purpose |
+| :--- | :--- | :--- |
+| **Programming Languages**| Python, Bash / Shell | Core logic, scripting, and application development |
+| **Version Control** | Git, GitHub | Source code management and feature branching |
+| **Documentation** | Markdown | Creating structured, readable project documentation |
+| **Execution Environment**| Linux / CLI | Running command-line tools and testing scripts |
 
 
 ⚙️ How to Use This Repository
