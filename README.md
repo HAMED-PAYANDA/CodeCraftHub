@@ -143,7 +143,9 @@ chmod +x script_name.sh
 
 •	[ ] Containerize core utility applications using Docker.
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-Crafting efficient, scalable, and clean code—one script at a time.
+## 👤 Author
+
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM Full-Stack Software Developer Professional**.
+
