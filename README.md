@@ -188,10 +188,15 @@ chmod +x script_name.sh
 ## 🚀 Future Roadmap & Enhancements
 
 •	[ ] Role-Based Authorization: Expand the User Management service to include granular RBAC capabilities.
+
 •	[ ] AI-Powered Recommendations: Integrate generative AI to provide personalized learning paths.
+
 •	[ ] Service Expansion: Add adjacent microservices (e.g., courses, exercises, and analytics).
+
 •	[ ] Cloud Deployment: Deploy the containerized cluster using Kubernetes or managed cloud databases.
+
 •	[ ] CI/CD Integration: Integrate Continuous Integration workflows using GitHub Actions.
+
 •	[ ] TDD Implementation: Expand the algorithms section adhering strictly to test-driven development principles.
 
 ---
