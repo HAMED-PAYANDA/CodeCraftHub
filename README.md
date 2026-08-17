@@ -7,6 +7,7 @@ A centralized repository and developer sandbox dedicated to software engineering
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Bash](https://img.shields.io/badge/Shell_Script-CLI-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](#)
 [![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
+[![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
 [![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)](#)
 
 </div>
