@@ -40,19 +40,19 @@ Currently, this repository highlights the **User Management Service**, a foundat
 
 ## 📸 Visual Proof
 
-The following screenshots demonstrate the core functionalities of the CodeCraftHub platform, including secure API interactions, container orchestration, and script execution.
+The following screenshots detail the project's development lifecycle, from initial architectural AI planning to local environment setup and API endpoint validation.
 
-**1. Secure API Authentication (User Management)**  
-*Validating the `/api/users/login` endpoint via Postman. The backend securely authenticates the credentials, hashes the comparison via bcrypt, and issues a JSON Web Token (JWT) for session management.*
-![Postman API Testing](postman-demo.png)
+**1. AI-Assisted Architecture Planning**  
+*Leveraging Generative AI (via watsonx) to conceptualize the initial backend design. The AI's output recommended a Microservices Architecture and an API Gateway, establishing the foundational blueprint and requirements for the platform.*
+![AI-Assisted Architecture Planning](demo1.png)
 
-**2. Docker Containerization & Orchestration**  
-*Running the Node.js microservice and MongoDB database seamlessly using Docker Compose. The terminal output confirms successful container builds, network creation, and database connection.*
-![Docker Compose Execution](docker-demo.png)
+**2. Backend Development & Database Schema**  
+*A look into the Cloud IDE workspace during the initial build phase. The terminal shows the robust directory scaffolding (`controllers`, `models`, `routes`, `services`, `utils`). The editor highlights the `userModel.js` file, demonstrating the Mongoose schema implementation with built-in role-based parameters (Student, Instructor, Admin).*
+![Backend Workspace & Schema](demo2.png)
 
-**3. Workflow Automation & Script Execution**  
-*Executing the modular Bash and Python utility scripts directly from the command line interface, demonstrating clean terminal output and error handling.*
-![CLI Script Execution](cli-demo.png)
+**3. API Testing & Secure JWT Generation**  
+*Validating the authentication workflow using Postman. The screenshot captures a successful `POST` request to the `/api/users/login` endpoint. Upon verifying the email and password, the backend securely responds with an HTTP `200 OK` status and issues a JSON Web Token (JWT) for subsequent authenticated requests.*
+![Postman API Testing](demo3.png)
 
 ---
 
@@ -193,6 +193,12 @@ chmod +x script_name.sh
 •	[ ] Cloud Deployment: Deploy the containerized cluster using Kubernetes or managed cloud databases.
 •	[ ] CI/CD Integration: Integrate Continuous Integration workflows using GitHub Actions.
 •	[ ] TDD Implementation: Expand the algorithms section adhering strictly to test-driven development principles.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE) - see the LICENSE file for details.
 
 ## 👤 Author
 
