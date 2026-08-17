@@ -5,7 +5,10 @@
 A centralized repository and developer sandbox dedicated to software engineering projects, utility scripts, algorithms, and continuous learning.
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 [![Bash](https://img.shields.io/badge/Shell_Script-CLI-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)](#)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 [![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
 [![IBM Certification](https://img.shields.io/badge/IBM-Full%20Stack%20Software%20Developer%20Professional-blue?style=for-the-badge&logo=ibm)](https://www.coursera.org/professional-certificates/ibm-full-stack-cloud-developer)
 [![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)](#)
@@ -30,36 +33,78 @@ and secure data handling
 
 The primary goal of this hub is to demonstrate clean code architecture, version control best practices, and a commitment to continuous technical improvement.
 
+### 🛡️ Core Focus: User Management Service
+Currently, this repository highlights the **User Management Service**, a foundational backend microservice designed to deliver adaptive learning experiences. It manages users, enables secure authentication, and provides a scalable server-side architecture that can be extended with AI-driven recommendations and learning analytics.
+
 ---
 
-## 🏗️ Hub Architecture
+## 📸 Visual Proof
 
-To maintain a clean and scalable codebase, projects within this hub are compartmentalized into specific domains:
+The following screenshots demonstrate the core functionalities of the CodeCraftHub platform, including secure API interactions, container orchestration, and script execution.
 
-```text
-CodeCraftHub/
-├── 📂 automation-scripts/      # Bash and Python scripts for workflow automation
-├── 📂 algorithms/              # Data structures and algorithmic problem-solving
-├── 📂 web-development/         # Front-end and back-end application modules
-├── 📂 data-processing/         # Scripts for data parsing, cleaning, and analysis
-└── README.md                   # Master hub documentation
+**1. Secure API Authentication (User Management)**  
+*Validating the `/api/users/login` endpoint via Postman. The backend securely authenticates the credentials, hashes the comparison via bcrypt, and issues a JSON Web Token (JWT) for session management.*
+![Postman API Testing](postman-demo.png)
+
+**2. Docker Containerization & Orchestration**  
+*Running the Node.js microservice and MongoDB database seamlessly using Docker Compose. The terminal output confirms successful container builds, network creation, and database connection.*
+![Docker Compose Execution](docker-demo.png)
+
+**3. Workflow Automation & Script Execution**  
+*Executing the modular Bash and Python utility scripts directly from the command line interface, demonstrating clean terminal output and error handling.*
+![CLI Script Execution](cli-demo.png)
+
+---
+
+## ✨ Key Features
+
+* **Secure Authentication:** User registration and login utilizing JWT-based authentication.
+* **Data Security:** Secure password hashing implemented using `bcrypt`.
+* **Database Integration:** Seamless MongoDB integration using Mongoose ORM.
+* **Scalable Design:** A highly modular and scalable backend microservices architecture.
+* **Reliability:** Centralized logging and robust error handling.
+* **Environment Security:** Environment-based configuration using `.env` variables.
+* **Containerization:** Fully containerized deployment orchestrated with Docker & Docker Compose.
+
+---
+## 🏗️ System Architecture 
+
+The following diagram illustrates how CodeCraftHub is split between utility modules and the containerized User Management microservice.
+
+```mermaid
+graph TD
+    subgraph CodeCraftHub Sandbox
+        A[Python Scripts] --> D(Automation & Data Processing)
+        B[Bash Scripts] --> D
+        C[Algorithms] --> D
+    end
+
+    subgraph Personalized Learning Platform
+        E[Client / Web Browser] -->|HTTP Requests| F(Node.js API Gateway / Express)
+        F -->|Validate JWT| G[User Management Service]
+        G <-->|Mongoose ORM| H[(MongoDB Container)]
+    end
+    
+    classDef node fill:#339933,stroke:#fff,stroke-width:2px,color:#fff;
+    classDef mongo fill:#47A248,stroke:#fff,stroke-width:2px,color:#fff;
+    class F,G node;
+    class H mongo;
 ```
 
+---
 
+## 📁 Repository Structure
 
-## Key Features
-
-- User registration and login
-- Secure password hashing using **bcrypt**
-- **JWT-based authentication**
-- MongoDB integration using **Mongoose**
-- Modular and scalable backend architecture
-- Centralized logging and error handling
-- Environment-based configuration using `.env`
-- Fully containerized deployment with **Docker & Docker Compose**
-
-
-## Final Project Structure
+To maintain a clean and scalable codebase, projects within this hub are compartmentalized into specific domains.
+1. General Hub Architecture
+```text
+CodeCraftHub/
+├── automation-scripts/         # Bash and Python scripts for workflow automation
+├── algorithms/                 # Data structures and algorithmic problem-solving
+├── web-development/            # Front-end and back-end application modules
+└── data-processing/            # Scripts for data parsing, cleaning, and analysis
+```
+2. User Management Service (Final Project Structure)
 
 ```text
 project-root/
@@ -99,34 +144,38 @@ Future Enhancements
 ⸻
 
 ```
+---
 
-🛠️ Core Tech Stack
-| Category | Technologies Used | Purpose |
-| :--- | :--- | :--- |
-| **Programming Languages**| Python, Bash / Shell | Core logic, scripting, and application development |
-| **Version Control** | Git, GitHub | Source code management and feature branching |
-| **Documentation** | Markdown | Creating structured, readable project documentation |
-| **Execution Environment**| Linux / CLI | Running command-line tools and testing scripts |
+## 🛠️ Core Tech Stack
+
+* **Backend Framework:** ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white) ![Express.js](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white) — API routing, microservice architecture, and server logic.
+* **Database:** ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) — NoSQL data storage and object modeling (`Mongoose`).
+* **Containerization:** ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) — Application containerization and service orchestration (`Docker Compose`).
+* **Scripting Languages:** ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) — Core logic, workflow automation, and data processing.
+* **Security:** 🔐 **JWT & bcrypt** — Token-based authentication and secure password hashing.
+* **Version Control:** ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) — Source code management and feature branching.
+
+---
 
 
-⚙️ How to Use This Repository
+## ⚙️ How to Use This Repository
 If you would like to explore or test any of the scripts and projects contained in this hub, follow these standard steps:
 1. Clone the Hub
 Download a copy of the repository to your local machine:
-```text
+```bash
 git clone [https://github.com/HAMED-PAYANDA/CodeCraftHub.git](https://github.com/HAMED-PAYANDA/CodeCraftHub.git)
 cd CodeCraftHub
 ```
-3. Navigate to a Specific Module
+2. Navigate to a Specific Module
 Move into the directory of the project you want to explore:
-```text
+```bash
 # Example: Navigating to the python automation scripts
 cd automation-scripts
 ```
 
 3. Execute the Code
 Run the desired script using the appropriate runtime environment:
-```text
+```bash
 # For Python scripts:
 python3 script_name.py
 
@@ -134,14 +183,16 @@ python3 script_name.py
 chmod +x script_name.sh
 ./script_name.sh
 ```
+---
 
-🚀 Future Roadmap
+## 🚀 Future Roadmap & Enhancements
 
-•	[ ] Integrate Continuous Integration (CI) workflows using GitHub Actions.
-
-•	[ ] Expand the algorithms section with test-driven development (TDD) principles.
-
-•	[ ] Containerize core utility applications using Docker.
+•	[ ] Role-Based Authorization: Expand the User Management service to include granular RBAC capabilities.
+•	[ ] AI-Powered Recommendations: Integrate generative AI to provide personalized learning paths.
+•	[ ] Service Expansion: Add adjacent microservices (e.g., courses, exercises, and analytics).
+•	[ ] Cloud Deployment: Deploy the containerized cluster using Kubernetes or managed cloud databases.
+•	[ ] CI/CD Integration: Integrate Continuous Integration workflows using GitHub Actions.
+•	[ ] TDD Implementation: Expand the algorithms section adhering strictly to test-driven development principles.
 
 ## 👤 Author
 
